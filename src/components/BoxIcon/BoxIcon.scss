@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+$icon-size: 10rem;
+
+.BoxIcon {
+    border: 2px solid white;
+    padding: 1rem;
+    cursor: pointer;
+    width: $icon-size;
+    height: $icon-size;
+    color: white;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: $icon-size - 2rem;
+        height: $icon-size - 4rem;
+    }
+
+    &:hover {
+        background-color: white;
+        color: $purple;
+    }
+}
