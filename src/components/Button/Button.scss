@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+
+.Button {
+    color: $purple;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+}
