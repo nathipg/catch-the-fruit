@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Screen from '../../components/Screen/Screen';
-import ButtonLink from '../../components/ButtonLink/ButtonLink';
+import Button from '../../components/Button/Button';
 
 const Start = () => {
     return (
         <Screen centerContent>
             <h1>Catch the fruit</h1>
-            <ButtonLink to="/select-fruit">Play Game</ButtonLink>
+            <Link to="/select-fruit">
+                <Button>Play Game</Button>
+            </Link>
         </Screen>
     );
 };
