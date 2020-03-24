@@ -1,0 +1,40 @@
+$fruit-size: 50px;
+
+.Fruit {
+    position: absolute;
+    width: $fruit-size;
+    height: $fruit-size;
+    cursor: pointer;
+
+    &.desapear {
+        animation: desapear-in-keyframes 1s;
+    }
+
+    &.new {
+        animation-iteration-count: 1;
+        animation: new-in-keyframes 0.5s;
+    }
+    
+    @keyframes desapear-in-keyframes {
+        from {
+            width: $fruit-size;
+            height: $fruit-size;
+        }
+        to {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @keyframes new-in-keyframes {
+        from {
+            width: 0;
+            height: 0;
+        }
+        to {
+            
+            width: $fruit-size;
+            height: $fruit-size;
+        }
+    }
+}

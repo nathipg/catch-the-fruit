@@ -1,13 +1,13 @@
 @import '../../variables.scss';
 
-$icon-size: 10rem;
+$box-size: 10rem;
 
 .BoxIcon {
     border: 2px solid white;
     padding: 1rem;
     cursor: pointer;
-    width: $icon-size;
-    height: $icon-size;
+    width: $box-size;
+    height: $box-size;
     color: white;
 
     .content {
@@ -21,8 +21,8 @@ $icon-size: 10rem;
     }
 
     img {
-        width: $icon-size - 2rem;
-        height: $icon-size - 4rem;
+        width: $box-size - 2rem;
+        height: $box-size - 4rem;
     }
 
     &:hover {

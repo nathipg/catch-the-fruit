@@ -1,0 +1,8 @@
+.GameZone {
+    height: calc(100vh - 6rem);
+    width: 100vw;
+
+    @media (min-width: 400px) {
+        height: calc(100vh - 4rem);
+    }
+}

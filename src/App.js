@@ -8,6 +8,7 @@ import {
 
 import Start from './containers/Start/Start';
 import Select from './containers/Select/Select';
+import Game from './containers/Game/Game';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Start} />
                 <Route exact path="/select-fruit" component={Select} />
+                <Route path="/game" component={Game} />
                 <Redirect to="/" />
             </Switch>
         </Router>
